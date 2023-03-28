@@ -1,0 +1,128 @@
+body {
+    width: 100vw;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: slategray;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+img {
+    mix-blend-mode: luminosity;
+    height: 90px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+input {
+    height: 50px;
+    width: 200px;
+    margin-left: 200px;
+    border-radius: 10px;
+    border: 2px solid salmon;
+    margin-top: 20px;
+}
+
+button {
+    height: 55px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid #fa8072;
+    margin-left: 5px;
+    margin-top: 20px;
+    color: salmon;
+}
+
+nav {
+    display: flex;
+    width: 610px;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.container {
+    display: flex;
+    overflow: scroll;
+    margin-top: 150px;
+    margin-left: 100px;
+    height: 400px;
+    width: 420px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: 2px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.subcontainer {
+    color: salmon;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    left: 100px;
+    bottom: 5px;
+    background-color: black;
+    height: 80px;
+    width: 404px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.contents {
+    overflow-y: scroll;
+    text-align: center;
+    margin: 20px;
+}
+
+.title {
+    margin: 10px;
+}
+
+@media(min-width:1080px) {
+    body {
+        overflow-y: hidden;
+    }
+
+    nav {
+        width: 100vw;
+    }
+
+    input {
+        position: relative;
+        left: 600px;
+        bottom: 12px;
+    }
+
+    button {
+        position: relative;
+        left: 600px;
+        bottom: 12px;
+    }
+
+    .container {
+        position: relative;
+        bottom: 110px;
+        margin-bottom: 100px;
+        margin-left: 400px;
+    }
+
+    .subcontainer {
+        position: relative;
+        bottom: 210px;
+        padding: 0px;
+        margin-left: 300px;
+    }
+
+    img {
+        position: relative;
+        top: 0px;
+        height: 50px;
+    }
+}
